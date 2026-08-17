@@ -35,6 +35,10 @@ body {
   background: var(--color-canvas);
   color: var(--color-ink);
   font-family: var(--font-sans);
+  /* Keep Korean 어절 intact when wrapping; fall back to breaking only
+     when a single unbreakable token (long URL, email) would overflow. */
+  word-break: keep-all;
+  overflow-wrap: break-word;
 }
 
 ::selection {

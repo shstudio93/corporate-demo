@@ -22,7 +22,7 @@ export function Approach() {
               <h3 className="mt-3 text-lg font-semibold uppercase tracking-[0.08em] text-navy">
                 {step.title}
               </h3>
-              <p className="mt-3 max-w-[16rem] leading-relaxed text-ink">
+              <p className="mt-3 max-w-[18rem] leading-relaxed text-ink">
                 {step.description}
               </p>
             </li>

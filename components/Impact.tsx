@@ -16,7 +16,7 @@ export function Impact() {
                 i % 2 === 0 ? "" : "border-l"
               } lg:border-l lg:pl-10 lg:pr-0 ${i === 0 ? "lg:border-l-0 lg:pl-0" : ""}`}
             >
-              <p className="font-serif text-5xl font-medium tabular-nums leading-none sm:text-6xl">
+              <p className="font-serif text-4xl font-medium tabular-nums leading-none sm:text-5xl lg:text-6xl">
                 {stat.value}
               </p>
               <p className="mt-4 text-xs uppercase tracking-[0.16em] text-frost">

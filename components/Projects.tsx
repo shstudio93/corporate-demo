@@ -15,7 +15,7 @@ export function Projects() {
               actually implemented.
             </h2>
           </div>
-          <p className="max-w-xs text-sm leading-relaxed text-ink">
+          <p className="max-w-sm text-sm leading-relaxed text-ink">
             실제 고객명 대신 프로젝트 유형과 산업 특성을 기준으로 수행 사례를
             소개합니다.
           </p>
@@ -35,7 +35,7 @@ export function Projects() {
                 {item.project}
               </h3>
 
-              <div className="grid grid-cols-3 gap-4 sm:col-start-2 sm:pl-0 lg:col-start-3 lg:pl-8">
+              <div className="grid grid-cols-1 gap-3 sm:col-start-2 sm:grid-cols-3 sm:gap-4 sm:pl-0 lg:col-start-3 lg:pl-8">
                 <div>
                   <p className="text-[10px] uppercase tracking-[0.16em] text-muted">
                     Client Type

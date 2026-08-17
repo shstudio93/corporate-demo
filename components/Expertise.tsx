@@ -29,7 +29,7 @@ export function Expertise() {
               <h3 className="mt-6 font-serif text-2xl font-medium text-navy sm:text-[1.75rem]">
                 {area.title}
               </h3>
-              <p className="mt-4 max-w-sm leading-relaxed text-ink">
+              <p className="mt-4 max-w-md leading-relaxed text-ink">
                 {area.description}
               </p>
               <ul className="mt-6 flex flex-wrap gap-x-3 gap-y-2 border-t border-border pt-5 text-xs uppercase tracking-[0.1em] text-muted">

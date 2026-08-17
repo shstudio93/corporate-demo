@@ -14,7 +14,7 @@ export function About() {
               <br />
               to Execution.
             </h2>
-            <p className="mt-8 max-w-md text-balance leading-relaxed text-ink">
+            <p className="mt-8 max-w-lg text-balance leading-relaxed text-ink">
               NEXUS Strategy Partners는 보고서를 만드는 것에서 그치지 않습니다.
               문제 정의부터 분석, 전략 수립, 실행 체계 설계까지 하나의
               흐름으로 연결하여, 조직이 실제로 움직일 수 있는 전략을
@@ -36,7 +36,7 @@ export function About() {
                     <p className="font-serif text-xl font-medium text-navy sm:text-2xl">
                       {value.title}
                     </p>
-                    <p className="mt-2 max-w-md leading-relaxed text-ink">
+                    <p className="mt-2 max-w-lg leading-relaxed text-ink">
                       {value.description}
                     </p>
                   </div>
