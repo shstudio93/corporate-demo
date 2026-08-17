@@ -4,7 +4,7 @@ import { coreValues } from "@/lib/data";
 
 export function About() {
   return (
-    <section id="about" className="border-b border-line py-24 lg:py-32">
+    <section id="about" className="border-b border-border bg-canvas py-24 lg:py-32">
       <Container>
         <div className="grid grid-cols-1 gap-16 lg:grid-cols-12 lg:gap-8">
           <div className="lg:col-span-5">
@@ -14,7 +14,7 @@ export function About() {
               <br />
               to Execution.
             </h2>
-            <p className="mt-8 max-w-md text-balance leading-relaxed text-slate">
+            <p className="mt-8 max-w-md text-balance leading-relaxed text-ink">
               NEXUS Strategy Partners는 보고서를 만드는 것에서 그치지 않습니다.
               문제 정의부터 분석, 전략 수립, 실행 체계 설계까지 하나의
               흐름으로 연결하여, 조직이 실제로 움직일 수 있는 전략을
@@ -23,7 +23,7 @@ export function About() {
           </div>
 
           <div className="lg:col-span-7 lg:pt-1">
-            <ul className="divide-y divide-line border-t border-line">
+            <ul className="divide-y divide-border border-t border-border">
               {coreValues.map((value) => (
                 <li
                   key={value.index}
@@ -36,7 +36,7 @@ export function About() {
                     <p className="font-serif text-xl font-medium text-navy sm:text-2xl">
                       {value.title}
                     </p>
-                    <p className="mt-2 max-w-md leading-relaxed text-slate">
+                    <p className="mt-2 max-w-md leading-relaxed text-ink">
                       {value.description}
                     </p>
                   </div>

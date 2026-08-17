@@ -4,7 +4,7 @@ import { projects } from "@/lib/data";
 
 export function Projects() {
   return (
-    <section id="projects" className="border-b border-line py-24 lg:py-32">
+    <section id="projects" className="border-b border-border bg-canvas py-24 lg:py-32">
       <Container>
         <div className="mb-16 flex flex-col justify-between gap-6 sm:flex-row sm:items-end">
           <div className="max-w-2xl">
@@ -15,17 +15,17 @@ export function Projects() {
               actually implemented.
             </h2>
           </div>
-          <p className="max-w-xs text-sm leading-relaxed text-slate">
+          <p className="max-w-xs text-sm leading-relaxed text-ink">
             실제 고객명 대신 프로젝트 유형과 산업 특성을 기준으로 수행 사례를
             소개합니다.
           </p>
         </div>
 
-        <div className="border-t border-line">
+        <div className="border-t border-border">
           {projects.map((item) => (
             <div
               key={item.index}
-              className="grid grid-cols-1 gap-6 border-b border-line py-8 sm:grid-cols-[3rem_1fr] sm:gap-8 lg:grid-cols-[4rem_1fr_1.1fr] lg:items-center lg:py-10"
+              className="grid grid-cols-1 gap-6 border-b border-border py-8 sm:grid-cols-[3rem_1fr] sm:gap-8 lg:grid-cols-[4rem_1fr_1.1fr] lg:items-center lg:py-10"
             >
               <span className="font-serif text-2xl text-blue">
                 {item.index}
@@ -37,24 +37,24 @@ export function Projects() {
 
               <div className="grid grid-cols-3 gap-4 sm:col-start-2 sm:pl-0 lg:col-start-3 lg:pl-8">
                 <div>
-                  <p className="text-[10px] uppercase tracking-[0.16em] text-slate-light">
+                  <p className="text-[10px] uppercase tracking-[0.16em] text-muted">
                     Client Type
                   </p>
-                  <p className="mt-1.5 text-sm text-slate">
+                  <p className="mt-1.5 text-sm text-ink">
                     {item.clientType}
                   </p>
                 </div>
                 <div>
-                  <p className="text-[10px] uppercase tracking-[0.16em] text-slate-light">
+                  <p className="text-[10px] uppercase tracking-[0.16em] text-muted">
                     Service
                   </p>
-                  <p className="mt-1.5 text-sm text-slate">{item.service}</p>
+                  <p className="mt-1.5 text-sm text-ink">{item.service}</p>
                 </div>
                 <div>
-                  <p className="text-[10px] uppercase tracking-[0.16em] text-slate-light">
+                  <p className="text-[10px] uppercase tracking-[0.16em] text-muted">
                     Year
                   </p>
-                  <p className="mt-1.5 text-sm tabular-nums text-slate">
+                  <p className="mt-1.5 text-sm tabular-nums text-ink">
                     {item.year}
                   </p>
                 </div>

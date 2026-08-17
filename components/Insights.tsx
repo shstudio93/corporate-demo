@@ -4,7 +4,7 @@ import { insights } from "@/lib/data";
 
 export function Insights() {
   return (
-    <section id="insights" className="border-b border-line py-24 lg:py-32">
+    <section id="insights" className="border-b border-border bg-canvas py-24 lg:py-32">
       <Container>
         <div className="mb-16 max-w-2xl">
           <Eyebrow>INSIGHTS</Eyebrow>
@@ -15,9 +15,9 @@ export function Insights() {
           </h2>
         </div>
 
-        <ul className="border-t border-line">
+        <ul className="border-t border-border">
           {insights.map((post) => (
-            <li key={post.title} className="group border-b border-line">
+            <li key={post.title} className="group border-b border-border">
               <a
                 href="#insights"
                 className="flex flex-col gap-3 py-8 sm:flex-row sm:items-center sm:justify-between sm:gap-8 lg:py-10"
@@ -26,7 +26,7 @@ export function Insights() {
                   <span className="text-[10px] uppercase tracking-[0.16em] text-blue">
                     {post.category}
                   </span>
-                  <span className="text-xs tabular-nums text-slate-light">
+                  <span className="text-xs tabular-nums text-muted">
                     {post.date}
                   </span>
                 </div>
@@ -35,7 +35,7 @@ export function Insights() {
                 </h3>
                 <span
                   aria-hidden
-                  className="hidden text-navy transition-transform group-hover:translate-x-1 sm:block"
+                  className="hidden text-navy transition-all group-hover:translate-x-1 group-hover:text-blue sm:block"
                 >
                   →
                 </span>

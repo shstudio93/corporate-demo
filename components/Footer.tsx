@@ -5,32 +5,32 @@ export function Footer() {
   const year = new Date().getFullYear();
 
   return (
-    <footer className="bg-offwhite py-14">
+    <footer className="bg-navy py-14 text-frost">
       <Container>
-        <div className="grid grid-cols-1 gap-10 border-b border-line pb-10 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="grid grid-cols-1 gap-10 border-b border-white/15 pb-10 sm:grid-cols-2 lg:grid-cols-4">
           <div>
-            <p className="font-serif text-lg font-medium text-navy">
+            <p className="font-serif text-lg font-medium text-white">
               NEXUS
             </p>
-            <p className="mt-1 text-xs uppercase tracking-[0.18em] text-slate">
+            <p className="mt-1 text-xs uppercase tracking-[0.18em] text-frost">
               Strategy Partners
             </p>
           </div>
 
-          <div className="text-sm leading-relaxed text-slate">
+          <div className="text-sm leading-relaxed text-frost">
             <p>{contactInfo.address}</p>
           </div>
 
-          <div className="text-sm leading-relaxed text-slate">
+          <div className="text-sm leading-relaxed text-frost">
             <a
               href={`mailto:${contactInfo.email}`}
-              className="block hover:text-navy"
+              className="block transition-colors hover:text-blue-light"
             >
               {contactInfo.email}
             </a>
             <a
               href={`tel:${contactInfo.phone.replace(/-/g, "")}`}
-              className="mt-1 block hover:text-navy"
+              className="mt-1 block transition-colors hover:text-blue-light"
             >
               {contactInfo.phone}
             </a>
@@ -38,18 +38,18 @@ export function Footer() {
 
           <nav
             aria-label="Footer"
-            className="flex gap-6 text-sm text-slate sm:justify-end"
+            className="flex gap-6 text-sm text-frost sm:justify-end"
           >
-            <a href="#" className="hover:text-navy">
+            <a href="#" className="transition-colors hover:text-blue-light">
               LinkedIn
             </a>
-            <a href="#" className="hover:text-navy">
+            <a href="#" className="transition-colors hover:text-blue-light">
               Privacy
             </a>
           </nav>
         </div>
 
-        <p className="mt-8 text-xs text-slate-light">
+        <p className="mt-8 text-xs text-frost/70">
           © {year} NEXUS Strategy Partners. All rights reserved.
         </p>
       </Container>

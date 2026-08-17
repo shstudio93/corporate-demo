@@ -4,7 +4,7 @@ import { contactInfo } from "@/lib/data";
 
 export function ContactCta() {
   return (
-    <section id="contact" className="bg-navy py-24 text-offwhite lg:py-32">
+    <section id="contact" className="border-t border-white/10 bg-navy py-24 text-white lg:py-32">
       <Container>
         <div className="grid grid-cols-1 gap-12 lg:grid-cols-12 lg:gap-8">
           <div className="lg:col-span-8">
@@ -14,14 +14,14 @@ export function ContactCta() {
               <br />
               the right problem.
             </h2>
-            <p className="mt-8 max-w-lg text-balance leading-relaxed text-slate-light">
+            <p className="mt-8 max-w-lg text-balance leading-relaxed text-frost">
               새로운 전략, 조직 변화, 시장 분석이 필요하다면 프로젝트의
               시작부터 함께하겠습니다.
             </p>
 
             <a
               href={`mailto:${contactInfo.email}`}
-              className="mt-10 inline-flex min-h-12 items-center justify-center border border-offwhite px-7 text-xs font-medium uppercase tracking-[0.18em] text-offwhite transition-colors hover:bg-offwhite hover:text-navy"
+              className="mt-10 inline-flex min-h-12 items-center justify-center border border-white px-7 text-xs font-medium uppercase tracking-[0.18em] text-white transition-colors hover:border-blue-light hover:bg-blue-light hover:text-navy"
             >
               Start a Conversation
             </a>
@@ -29,23 +29,23 @@ export function ContactCta() {
 
           <div className="flex flex-col justify-end gap-4 border-t border-white/15 pt-8 lg:col-span-4 lg:border-t-0 lg:border-l lg:pt-0 lg:pl-10">
             <div>
-              <p className="text-[10px] uppercase tracking-[0.16em] text-slate-light">
+              <p className="text-[10px] uppercase tracking-[0.16em] text-frost">
                 Email
               </p>
               <a
                 href={`mailto:${contactInfo.email}`}
-                className="mt-2 block text-lg text-offwhite hover:text-blue"
+                className="mt-2 block text-lg text-white transition-colors hover:text-blue-light"
               >
                 {contactInfo.email}
               </a>
             </div>
             <div>
-              <p className="text-[10px] uppercase tracking-[0.16em] text-slate-light">
+              <p className="text-[10px] uppercase tracking-[0.16em] text-frost">
                 Phone
               </p>
               <a
                 href={`tel:${contactInfo.phone.replace(/-/g, "")}`}
-                className="mt-2 block text-lg text-offwhite hover:text-blue"
+                className="mt-2 block text-lg text-white transition-colors hover:text-blue-light"
               >
                 {contactInfo.phone}
               </a>

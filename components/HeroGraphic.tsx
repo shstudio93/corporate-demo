@@ -49,6 +49,12 @@ export function HeroGraphic() {
         N
       </text>
 
+      <polygon
+        points="48,480 48,440 156,392 264,300 348,208 432,120 432,480"
+        fill="var(--color-blue-light)"
+        fillOpacity="0.08"
+      />
+
       <polyline
         points="48,440 156,392 264,300 348,208 432,120"
         fill="none"
@@ -62,15 +68,25 @@ export function HeroGraphic() {
         [348, 208],
         [432, 120],
       ].map(([x, y], i) => (
-        <circle
-          key={`${x}-${y}`}
-          cx={x}
-          cy={y}
-          r={i === 4 ? 5 : 3}
-          fill={i === 4 ? "var(--color-blue)" : "var(--color-offwhite)"}
-          stroke="currentColor"
-          strokeWidth="1.2"
-        />
+        <g key={`${x}-${y}`}>
+          {i === 4 && (
+            <circle
+              cx={x}
+              cy={y}
+              r="11"
+              fill="var(--color-blue-light)"
+              fillOpacity="0.16"
+            />
+          )}
+          <circle
+            cx={x}
+            cy={y}
+            r={i === 4 ? 5 : 3}
+            fill={i === 4 ? "var(--color-blue-light)" : "var(--color-surface)"}
+            stroke={i === 4 ? "var(--color-blue-light)" : "currentColor"}
+            strokeWidth="1.2"
+          />
+        </g>
       ))}
 
       <line

@@ -4,7 +4,7 @@ import { impactStats } from "@/lib/data";
 
 export function Impact() {
   return (
-    <section className="border-b border-line bg-navy py-20 text-offwhite lg:py-24">
+    <section className="bg-navy py-20 text-white lg:py-24">
       <Container>
         <Eyebrow tone="light">TRACK RECORD</Eyebrow>
 
@@ -19,7 +19,7 @@ export function Impact() {
               <p className="font-serif text-5xl font-medium tabular-nums leading-none sm:text-6xl">
                 {stat.value}
               </p>
-              <p className="mt-4 text-xs uppercase tracking-[0.16em] text-slate-light">
+              <p className="mt-4 text-xs uppercase tracking-[0.16em] text-frost">
                 {stat.label}
               </p>
             </div>

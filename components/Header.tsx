@@ -15,7 +15,7 @@ export function Header() {
   }, [menuOpen]);
 
   return (
-    <header className="sticky top-0 z-50 border-b border-line bg-offwhite/95 backdrop-blur">
+    <header className="sticky top-0 z-50 border-b border-border bg-surface/95 backdrop-blur">
       <Container className="flex h-16 items-center justify-between py-4 sm:h-20">
         <a
           href="#top"
@@ -25,7 +25,7 @@ export function Header() {
           <span className="font-serif text-lg font-medium tracking-tight text-navy sm:text-xl">
             NEXUS
           </span>
-          <span className="text-[10px] uppercase tracking-[0.24em] text-slate">
+          <span className="text-[10px] uppercase tracking-[0.24em] text-muted">
             Strategy Partners
           </span>
         </a>
@@ -38,7 +38,7 @@ export function Header() {
             <a
               key={link.href}
               href={link.href}
-              className="text-xs font-medium uppercase tracking-[0.18em] text-slate transition-colors hover:text-navy"
+              className="text-xs font-medium uppercase tracking-[0.18em] text-muted transition-colors hover:text-blue"
             >
               {link.label}
             </a>
@@ -47,7 +47,7 @@ export function Header() {
 
         <a
           href="#contact"
-          className="hidden shrink-0 items-center border border-navy px-5 py-2.5 text-xs font-medium uppercase tracking-[0.18em] text-navy transition-colors hover:bg-navy hover:text-offwhite lg:inline-flex"
+          className="hidden shrink-0 items-center border border-navy px-5 py-2.5 text-xs font-medium uppercase tracking-[0.18em] text-navy transition-colors hover:border-blue hover:bg-blue hover:text-white lg:inline-flex"
         >
           Project Inquiry
         </a>
@@ -75,7 +75,7 @@ export function Header() {
 
       <div
         id="mobile-menu"
-        className={`overflow-hidden border-t border-line bg-offwhite transition-[max-height] duration-300 ease-in-out lg:hidden ${
+        className={`overflow-hidden border-t border-border bg-surface transition-[max-height] duration-300 ease-in-out lg:hidden ${
           menuOpen ? "max-h-[420px]" : "max-h-0 border-t-0"
         }`}
         inert={!menuOpen}
@@ -86,7 +86,7 @@ export function Header() {
               key={link.href}
               href={link.href}
               onClick={() => setMenuOpen(false)}
-              className="flex min-h-12 items-center border-b border-line text-sm font-medium uppercase tracking-[0.18em] text-navy last:border-b-0"
+              className="flex min-h-12 items-center border-b border-border text-sm font-medium uppercase tracking-[0.18em] text-navy transition-colors hover:text-blue last:border-b-0"
             >
               {link.label}
             </a>
@@ -94,7 +94,7 @@ export function Header() {
           <a
             href="#contact"
             onClick={() => setMenuOpen(false)}
-            className="mt-5 flex min-h-12 items-center justify-center border border-navy text-xs font-medium uppercase tracking-[0.18em] text-navy"
+            className="mt-5 flex min-h-12 items-center justify-center border border-navy text-xs font-medium uppercase tracking-[0.18em] text-navy transition-colors hover:border-blue hover:bg-blue hover:text-white"
           >
             Project Inquiry
           </a>

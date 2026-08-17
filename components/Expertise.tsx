@@ -4,7 +4,7 @@ import { expertiseAreas } from "@/lib/data";
 
 export function Expertise() {
   return (
-    <section id="expertise" className="border-b border-line py-24 lg:py-32">
+    <section id="expertise" className="border-b border-border bg-surface py-24 lg:py-32">
       <Container>
         <div className="mb-16 max-w-2xl">
           <Eyebrow>WHAT WE DO</Eyebrow>
@@ -15,11 +15,11 @@ export function Expertise() {
           </h2>
         </div>
 
-        <div className="grid grid-cols-1 border-t border-l border-line sm:grid-cols-2">
+        <div className="grid grid-cols-1 border-t border-l border-border sm:grid-cols-2">
           {expertiseAreas.map((area) => (
             <div
               key={area.index}
-              className="border-r border-b border-line p-8 sm:p-10 lg:p-12"
+              className="border-r border-b border-border p-8 sm:p-10 lg:p-12"
             >
               <div className="flex items-baseline justify-between">
                 <span className="font-serif text-3xl text-blue">
@@ -29,15 +29,15 @@ export function Expertise() {
               <h3 className="mt-6 font-serif text-2xl font-medium text-navy sm:text-[1.75rem]">
                 {area.title}
               </h3>
-              <p className="mt-4 max-w-sm leading-relaxed text-slate">
+              <p className="mt-4 max-w-sm leading-relaxed text-ink">
                 {area.description}
               </p>
-              <ul className="mt-6 flex flex-wrap gap-x-3 gap-y-2 border-t border-line pt-5 text-xs uppercase tracking-[0.1em] text-slate-light">
+              <ul className="mt-6 flex flex-wrap gap-x-3 gap-y-2 border-t border-border pt-5 text-xs uppercase tracking-[0.1em] text-muted">
                 {area.items.map((item, i) => (
                   <li key={item} className="flex items-center gap-3">
                     {item}
                     {i < area.items.length - 1 && (
-                      <span aria-hidden className="text-line-strong">
+                      <span aria-hidden className="text-border-strong">
                         /
                       </span>
                     )}

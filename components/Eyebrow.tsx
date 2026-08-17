@@ -8,11 +8,11 @@ export function Eyebrow({
   return (
     <p
       className={`flex items-center gap-3 text-[11px] font-medium uppercase tracking-[0.28em] ${
-        tone === "dark" ? "text-blue" : "text-slate-light"
+        tone === "dark" ? "text-blue" : "text-frost"
       }`}
     >
       <span
-        className={`h-px w-8 ${tone === "dark" ? "bg-blue" : "bg-slate-light"}`}
+        className={`h-px w-8 ${tone === "dark" ? "bg-blue" : "bg-frost"}`}
         aria-hidden
       />
       {children}

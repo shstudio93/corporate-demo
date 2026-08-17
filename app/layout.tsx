@@ -53,7 +53,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       lang="ko"
       className={`${geistSans.variable} ${newsreader.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col bg-offwhite text-navy">
+      <body className="min-h-full flex flex-col bg-canvas text-ink">
         {children}
       </body>
     </html>
